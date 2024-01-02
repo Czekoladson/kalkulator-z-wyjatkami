@@ -1,5 +1,5 @@
 
-def spam(podzielone_przez):         #nie rozbudowana wersja
+def spam(podzielone_przez):         #nierozbudowana wersja
     return 42 / podzielone_przez
 
 try:
@@ -10,6 +10,21 @@ try:
    print(spam(13))
 except ZeroDivisionError:
     print("Nie można dzielić przez zero !") 
+
+
+try:        #więcej przykładowych błędów
+    liczba1 = int(input("Podaj pierwszą liczbę: "))
+    liczba2 = int(input("Podaj drugą liczbę: "))
+
+    wynik = liczba1 / liczba2
+    print("Wynik dzielenia: ", wynik)
+
+except ZeroDivisionError:
+    print("Nie można dzielić przez zero!")
+except ValueError:
+    print("Wprowadzono nieprawidłową wartość!")
+except Exception as e:
+    print("Wystąpił błąd:", e)
 
     
 
