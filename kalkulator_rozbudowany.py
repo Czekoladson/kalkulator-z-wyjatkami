@@ -43,7 +43,7 @@ while True:
     wynik = działaniaa(działanie,liczba_1,liczba_2)
 
     print("Wynik to: ",wynik)    
-    print("===============")
+    print("================")
     
         
 
