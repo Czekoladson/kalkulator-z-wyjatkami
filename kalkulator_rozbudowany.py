@@ -15,15 +15,15 @@ while True:
     if działanie not in ["+" ,"-" ,"*" ,"/"]:
         print("Podaj jedno z dostepnych opcji !")
 
-    def działaniaa(działanie,a,b):
+    def działanie(wybor,a,b):
 
-        if działanie == "+":
+        if wybor == "+":
             return a + b
-        if działanie == "-":
+        if wybor == "-":
             return a - b
-        if działanie == "*":
+        if wybor == "*":
             return a * b
-        if działanie == "/":
+        if wybor == "/":
             return a / b
         
     try:
@@ -40,7 +40,7 @@ while True:
         print("Nie można dzielić przez zero !")
         continue
 
-    wynik = działaniaa(działanie,liczba_1,liczba_2)
+    wynik = działanie(działanie,liczba_1,liczba_2)
 
     print("Wynik to: ",wynik)    
     print("================")
